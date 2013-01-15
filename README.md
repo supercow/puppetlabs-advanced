@@ -23,7 +23,7 @@ License
 
 Contact
 -------
-zack@puppetlabs.com
+
 
 Support
 -------
