@@ -27,4 +27,15 @@ class advanced::classroom {
     ensure  => file,
     content => template("${module_name}/etc/puppetlabs/puppet/autosign.conf.erb"),
   }
+
+  # Setup the wordpress class for exercise 2.2
+  exec { "nodeclass:add wordpress":
+    path        => '/opt/puppet/bin:/bin',
+    cwd         => '/opt/puppet/share/puppet-dashboard',
+    environment => 'RAILS_ENV=production',
+    command     => "rake nodeclass:add name=wordpress",
+    unless      => "rake RAILS_ENV=production nodeclass:list | grep wordpress",
+    returns     => '1',
+  }
+
 }
