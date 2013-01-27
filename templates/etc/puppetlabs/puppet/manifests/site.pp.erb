@@ -46,5 +46,10 @@ node default {
   # pe_mcollective has been removed from the ENC ( PE Console ).  Adding it 
   # back here, allows for pe_mcollective runs to happen only when targeting 
   # this host with `--server` or server = classroom.puppetlabs.vm
-  include pe_mcollective
+  # You must set an ENC parameter fact_is_puppetmaster to false on the default
+  # group. This will override the defaults and trigger this condtional
+  # This will not be configured until later exercises given the rake API cron interval
+  if ! str2bool($::fact_is_puppetmaster) {
+    include pe_mcollective
+  }
 }
