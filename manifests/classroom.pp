@@ -20,4 +20,11 @@ class advanced::classroom {
     mode   => '666',
     source => '/var/lib/peadmin/.mcollective',
   }
+
+
+  # Enable autosigning to simplify exercises
+  file { '/etc/puppetlabs/puppet/autosign.conf':
+    ensure  => file,
+    content => template("${module_name}/etc/puppetlabs/puppet/autosign.conf.erb"),
+  }
 }
