@@ -1,0 +1,64 @@
+{
+  "description": "UNKNOWN",
+  "types": [
+
+  ],
+  "summary": "Module to aid in Puppet EDU training environment creation",
+  "dependencies": [
+    {
+      "name": "puppetlabs/puppetdb",
+      "version_requirement": ">= 1.1.4"
+    },
+    {
+      "name": "zack/haproxy",
+      "version_requirement": ">= 0.2.0"
+    },
+    {
+      "name": "hunner/charybdis",
+      "version_requirement": ">= 0.2.0"
+    },
+    {
+      "name": "zack/irc",
+      "version_requirement": ">= 0.0.4"
+    }
+  ],
+  "author": "zack",
+  "version": "1.0.7",
+  "source": "https://github.com/puppetlabs/puppetlabs-training-bootstrap/tree/master/modules",
+  "checksums": {
+    "templates/etc/puppetlabs/puppet/manifests/site.pp.erb": "682663d765c6a7af8c8787f2d255c9e4",
+    "manifests/classroom.pp": "f940eef45bf2ca007a3d7d3780f95b6a",
+    "manifests/network/proxy.pp": "2bf96087b8e668ccfcd8e01048ba1df4",
+    "templates/network.erb": "2f715d16771f0c1ec1a6de2bbd022b6b",
+    "manifests/proxy/hostname.pp": "471a05fd65d35d4d0b0554c635354815",
+    "manifests/classroom/haproxy.pp": "184f6187bd50651a6696da55e9a76900",
+    "manifests/agent.pp": "09d2e2814170c8519db3a7044c5f7b63",
+    "tests/init.pp": "458e53e06546816ebbc76a2e37cc53b0",
+    "tests/full.pp": "30dfa59a5fc9665db9c99b6dc92932c4",
+    "templates/etc/puppetlabs/puppet/autosign.conf.erb": "b3136a962c78ed1216a17f6c0e30b9c0",
+    "scripts/master-hostname.sh": "949dafb4781a078a49bac72f09577e94",
+    "README.md": "a77ce012967e38a912f8675b1b851d5b",
+    "Modulefile": "597fd03f824f5511652d0373d09563e6",
+    "manifests/hostname.pp": "993a4fdf6cf75c7b3f084aede315475e",
+    "manifests/agent/puppetdb.pp": "1cc4b703b21f8c499aca88ed9c396d96",
+    "manifests/classroom/puppetdb.pp": "1df249a2845ecae57d030381a875238b",
+    "manifests/classroom/hostname.pp": "0b82623f9db01afb0ec33de36743d93d",
+    "files/puppetlabs-enterprise-release-extras.deb": "5c8ee028028d0283ee7ff4107cf5498e",
+    "manifests/backup.pp": "ecc025e32f2aeb3f807e44c7e42dac46",
+    "tests/exercise.pp": "7991d250c0f223f9fbe3fc7133fee9a5",
+    "scripts/agent-hostname.sh": "fa3b290d3e7478c646525828521f61fe",
+    "manifests/template.pp": "127cc6fd5bd762d3506a6757eaae949e",
+    "manifests/mcollective.pp": "bcf59ab7cf662255996cf68e51b1d66e",
+    "manifests/irc/server.pp": "3c9e24fac8c31adc189518ba0033dc0a",
+    "templates/etc/puppetlabs/puppet/auth.conf.erb": "0f4e7688efd22a50c822af0bc0f685f3",
+    "manifests/irc/client.pp": "bda61acd4ca47274a019109f969d8c72",
+    "manifests/init.pp": "5572f0b46923177bb7b2e766b702898c",
+    "manifests/agent/peadmin.pp": "89e58e2f0158239e3581720f1c843ab5",
+    "manifests/agent/hostname.pp": "d6f12dd6f739a67466d19fe6f06ccbe6",
+    "manifests/proxy.pp": "2c752eb7fc8f2c3e9d0a076d1e9f387f",
+    "manifests/proxy/haproxy.pp": "7366ccbd67ca5aff414510a756e9cc86"
+  },
+  "license": "Apache License, Version 2.0",
+  "name": "zack-advanced",
+  "project_page": "UNKNOWN"
+}
